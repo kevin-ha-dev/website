@@ -8,7 +8,7 @@ export function ProductHero() {
     <section className="page-x border-b border-text-primary/10 bg-background">
       <div
         className="mx-auto grid max-w-[1200px] grid-cols-12 gap-x-6 gap-y-10 pb-14 md:gap-x-8 md:pb-20"
-        style={{ paddingTop: NAV_BAR_HEIGHT_PX + 48 }}
+        style={{ paddingTop: NAV_BAR_HEIGHT_PX + 72 }}
       >
         <div className="col-span-12 flex flex-col gap-5 md:col-span-5 lg:col-span-4">
           <p className="type-eyebrow">01 · Own a BurgerBot</p>

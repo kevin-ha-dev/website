@@ -30,7 +30,7 @@ export const abbPartnershipHighlights: PartnershipHighlight[] = [
 ];
 
 export const abbPartnershipProof = [
-  { value: "FlexPicker", label: "+ YuMi cobot" },
+  { value: "Live", label: "production today" },
   { value: "Breaking Dawn", label: "Los Gatos, CA" },
   { value: "Food-grade", label: "hygienic cell" },
 ] as const;
