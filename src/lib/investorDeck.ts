@@ -40,13 +40,24 @@ export const investorHeroCopy = {
     "Live robotic assembly in a commercial kitchen today, not a pilot, not a lab.",
 };
 
+export const investorProofCopy = {
+  title: "In the dining room.",
+  intro:
+    "We operate a proven robotic kitchen in a customer-facing restaurant.",
+};
+
 export const investorProofPoints = [
   "Live production at Breaking Dawn & First Born, Los Gatos, since April 2025",
-  "ABB FlexPicker and YuMi cobots in daily production",
-  "Covered by ABB, NBC Bay Area, and ABC7",
+  "Successfully trained non-engineers to operate the machine in daily production",
+  "The robot draws families, media coverage, and attention to the restaurant — proof of our approach to the future of food",
 ] as const;
 
-export const investorPressCopy = {
-  description:
-    "Local news and industry press on what's running in production today.",
-};
+export const investorFounderCopy = {
+  eyebrow: "Founder",
+  body:
+    "Elizabeth Truong has over two decades as a restaurant operator. She leads alongside robotics and software engineers and restaurant operators, all enthused to reshape the future of food.",
+  image: {
+    src: "/assets/investors/founder.png",
+    alt: "Elizabeth Truong, BurgerBots founder",
+  },
+} as const;

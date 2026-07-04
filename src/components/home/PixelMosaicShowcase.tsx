@@ -37,7 +37,7 @@ function ShowcaseTileContent({ tile }: { tile: ShowcaseTile }) {
       <VideoEmbed
         src={tile.src}
         title={tile.alt}
-        className="absolute inset-0 h-full w-full"
+        className="absolute inset-0"
       />
     );
   }
@@ -63,7 +63,10 @@ function MosaicTile({
   className?: string;
 }) {
   const ctaFooter = tile.cta ? (
-    <a href={tile.cta.href} className="btn-primary">
+    <a
+      href={tile.cta.href}
+      className="btn-primary justify-center py-[var(--bb-button-sm-padding-y)] md:py-[var(--bb-button-padding-y)]"
+    >
       {tile.cta.label}
     </a>
   ) : undefined;
@@ -82,8 +85,8 @@ function MosaicTile({
         className="h-full w-full"
       >
         <div
-          className={`relative w-full ${
-            tile.size === "lg" ? "min-h-[228px] md:min-h-full md:h-full" : "h-full min-h-[114px]"
+          className={`relative h-full w-full ${
+            tile.size === "lg" ? "min-h-[228px] md:min-h-full" : "min-h-[114px]"
           }`}
         >
           <ShowcaseTileContent tile={tile} />

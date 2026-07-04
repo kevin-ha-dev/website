@@ -2,22 +2,23 @@
 
 import { useState } from "react";
 import { FadeIn } from "@/components/shared/FadeIn";
+import { siteConfig } from "@/lib/siteConfig";
 
 const faqs = [
   {
     question: "Do I need to redesign my kitchen to install it?",
     answer:
-      "No. BurgerBots is designed to work in the kitchen you already have, and the layout can be configured to fit your space. No construction, no conveyor overhauls, no floor plan changes.",
+      "BurgerBots is designed to work in the kitchen you already have and can be configured to fit your space.",
   },
   {
     question: "What does setup look like?",
     answer:
-      "Our team comes in and handles it. We map the system to your kitchen layout, train it on your menu, and get your staff comfortable running it — all without shutting down service.",
+      "We come in and coordinate with your team on your menu, restaurant setup, and delivery.",
   },
   {
     question: "How fast can it actually work?",
     answer:
-      "About 27 seconds a burger, and one unit can handle up to 130 covers per hour. If your volume grows, add another unit, they share the queue automatically.",
+      "BurgerBots garnishes the burger in 27 seconds.",
   },
   {
     question:
@@ -31,7 +32,16 @@ const faqs = [
         >
           realhuman@burgerbots.com
         </a>{" "}
-        so we can talk burgs &apos;n bots.
+        so we can talk burgs &apos;n bots, or{" "}
+        <a
+          href={siteConfig.calendlyUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-text-primary underline underline-offset-2"
+        >
+          book a call
+        </a>
+        .
       </>
     ),
   },

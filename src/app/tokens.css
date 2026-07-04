@@ -422,3 +422,9 @@
     --shadow-card-hover: var(--bb-shadow-lg);
     --shadow-brand: var(--bb-shadow-brand);
   }
+
+@media (max-width: 767px) {
+  :root {
+    --bb-page-padding-inline: 0.25in;
+  }
+}

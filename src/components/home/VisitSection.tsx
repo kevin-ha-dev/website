@@ -15,26 +15,27 @@ export function VisitSection() {
       className="page-x border-t border-dashed border-text-primary/10 bg-surface-muted py-[calc(var(--spacing-section-sm)+0.25in)]"
       style={{ scrollMarginTop: NAV_BAR_HEIGHT_PX }}
     >
-      <div className="mx-auto grid max-w-5xl grid-cols-[11rem_minmax(0,1fr)] items-stretch gap-5 md:grid-cols-[26rem_minmax(0,1fr)] md:gap-10">
-        <FadeIn className="h-full min-h-0">
+      <div className="mx-auto grid max-w-5xl grid-cols-1 items-stretch gap-8 md:grid-cols-[26rem_minmax(0,1fr)] md:gap-10">
+        <FadeIn className="min-h-0 w-full">
           <PixelFrame
             label="Breaking Dawn · Los Gatos"
             labelPosition="overlay"
             className="h-full w-full"
           >
-            <div className="relative h-full min-h-48 w-full md:min-h-0">
+            <div className="relative aspect-[682/1024] w-full md:aspect-auto md:h-full md:min-h-0">
               <Image
                 src={restaurant.visitImage}
                 alt="Fried chicken sandwich and fries at Breaking Dawn in Los Gatos"
                 fill
-                sizes="(max-width: 768px) 44vw, 26rem"
+                sizes="(max-width: 768px) 100vw, 26rem"
+                quality={90}
                 className="object-cover"
               />
             </div>
           </PixelFrame>
         </FadeIn>
 
-        <FadeIn delay={0.1} className="flex min-w-0 flex-1 flex-col justify-between gap-5 md:gap-6">
+        <FadeIn delay={0.1} className="flex min-w-0 flex-col justify-between gap-6 md:gap-6">
           <div>
             <p className="type-eyebrow">Swing By</p>
             <h2 className="type-heading-xl mt-2 text-text-primary">

@@ -12,24 +12,24 @@ export type InvestorMetric = {
 
 export const productMetrics: ProductMetric[] = [
   {
-    value: "27",
-    unit: "seconds a burger",
+    value: "Consistency",
+    unit: "",
     label: "",
   },
   {
-    value: "6-axis",
-    unit: "robot arm",
+    value: "Transparency",
+    unit: "",
     label: "",
   },
   {
-    value: "Gram-level",
-    unit: "sauce control",
+    value: "Efficiency",
+    unit: "",
     label: "",
   },
   {
-    value: "Sub-mm",
-    unit: "precision",
-    label: "Consistent assembly on every bun, sauce, and topping.",
+    value: "Quality",
+    unit: "You want every time",
+    label: "",
   },
 ];
 

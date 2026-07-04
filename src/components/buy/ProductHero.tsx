@@ -16,9 +16,8 @@ export function ProductHero() {
             Put B.O.B. in your kitchen.
           </h1>
           <p className="type-body max-w-xs leading-relaxed">
-            BurgerBots works in the kitchen you already run. Our team handles
-            setup, menu training from live demonstrations, and consistent
-            assembly from the first order.
+            Want to learn more? Book a call and we&apos;ll walk you through
+            ownership, setup, and menu training.
           </p>
           <Link
             href={siteConfig.calendlyUrl}

@@ -5,16 +5,6 @@ import { FadeIn } from "@/components/shared/FadeIn";
 import { PixelFrame } from "@/components/home/PixelFrame";
 import { menuHighlights } from "@/lib/menuHighlights";
 
-const getMenuImageClassName = (id: string) => {
-  if (id === "chicken") {
-    return "object-cover object-[center_70%] scale-[1.03]";
-  }
-  if (id === "lemongrass-tofu") {
-    return "object-cover object-[center_65%]";
-  }
-  return "object-cover";
-};
-
 export function MenuHighlights() {
   return (
     <section className="page-x border-t border-dashed border-text-primary/10 bg-background py-[calc(var(--spacing-section-md)+0.375in)]">
@@ -35,7 +25,7 @@ export function MenuHighlights() {
                   alt={item.name}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className={getMenuImageClassName(item.id)}
+                  className="object-cover object-[center_68%]"
                 />
               </div>
             </PixelFrame>

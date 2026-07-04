@@ -15,7 +15,7 @@ export const menuHighlights: MenuItem[] = [
       "Quality beef grilled by our chefs, finished by B.O.B. The combo that started it all.",
     note: "Fresh-ground beef, melted cheese, and a side of thick-cut fries.",
     ctaLabel: "Try Burger & Fries →",
-    image: "/assets/menu/burger-and-fries.png",
+    image: "/assets/menu/breaking-dawn-burger-and-fries.png",
   },
   {
     id: "chicken",
@@ -24,7 +24,7 @@ export const menuHighlights: MenuItem[] = [
       "Crispy fried chicken, stacked with lettuce, tomato, and onion, built to spec every time.",
     note: "Golden crunch on the outside, same precise build on every order.",
     ctaLabel: "Try Chicken Burger →",
-    image: "/assets/menu/chicken-burger.png",
+    image: "/assets/menu/breaking-dawn-chicken-burger.png",
   },
   {
     id: "lemongrass-tofu",
@@ -33,6 +33,6 @@ export const menuHighlights: MenuItem[] = [
       "Seared tofu with lemongrass, crisp produce, and the same sub-mm care as everything on the line.",
     note: "Bold lemongrass flavor, layered to spec. No shortcuts, no compromise.",
     ctaLabel: "Try Lemongrass Tofu →",
-    image: "/assets/menu/lemongrass-tofu-burger.png",
+    image: "/assets/menu/breaking-dawn-lemongrass-tofu-burger.png",
   },
 ];

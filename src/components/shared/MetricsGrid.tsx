@@ -42,20 +42,23 @@ export function MetricsGrid(props: MetricsGridProps) {
     const productMetrics = metrics as ProductMetric[];
     return (
       <section className={sectionClass}>
-        <div className="mx-auto grid w-full max-w-[1200px] grid-cols-2 divide-x divide-y divide-text-primary/10 border-t border-text-primary/10 lg:grid-cols-4 lg:divide-y-0">
-          {productMetrics.map((stat, i) => (
-            <FadeIn key={stat.unit} delay={i * 0.08}>
-              <div className="flex flex-col gap-1.5 px-5 py-8 md:px-6 md:py-10 lg:px-8">
-                <p className="type-metric text-text-primary">{stat.value}</p>
-                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-text-primary">
-                  {stat.unit}
-                </p>
-                {stat.label ? (
-                  <p className="type-body-sm mt-1 leading-snug">{stat.label}</p>
-                ) : null}
-              </div>
-            </FadeIn>
-          ))}
+        <div className="mx-auto w-full max-w-[1200px]">
+          <div className="grid auto-rows-fr grid-cols-2 divide-x divide-y divide-text-primary/10 border-y border-text-primary/10 lg:grid-cols-4 lg:divide-y-0">
+            {productMetrics.map((stat, i) => (
+              <FadeIn key={stat.value} delay={i * 0.08} className="h-full">
+                <div className="flex h-full flex-col gap-1 px-5 pt-8 pb-5 md:px-8 md:pt-10 md:pb-6">
+                  <p className="font-display text-3xl font-bold tracking-tight text-text-primary md:text-4xl">
+                    {stat.value}
+                  </p>
+                  <p
+                    className={`type-eyebrow text-text-primary ${stat.unit || stat.label ? "" : "invisible"}`}
+                  >
+                    {stat.unit || stat.label || "\u00A0"}
+                  </p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
     );

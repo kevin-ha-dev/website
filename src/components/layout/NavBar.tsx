@@ -35,7 +35,15 @@ export function NavBar() {
             : `border-text-primary/8 ${useDarkNav ? "bg-background" : "bg-surface-dark"}`
         }`}
       >
-        <div className="flex items-center justify-between px-6 py-4">
+        <div
+          className={`flex items-center py-4 ${
+            useDarkNav
+              ? "px-[var(--spacing-page-x)]"
+              : "px-[var(--spacing-page-x)] md:px-6"
+          } ${
+            showBackNav ? "justify-between" : "relative justify-end md:justify-between"
+          }`}
+        >
           {showBackNav ? (
             <Link
               href="/home"
@@ -62,7 +70,10 @@ export function NavBar() {
               </svg>
             </Link>
           ) : (
-            <Link href="/home" className="flex items-center">
+            <Link
+              href="/home"
+              className="absolute left-1/2 flex -translate-x-1/2 items-center md:static md:translate-x-0"
+            >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={

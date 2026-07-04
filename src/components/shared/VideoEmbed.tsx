@@ -45,7 +45,7 @@ function NativeVideo({
   }, []);
 
   return (
-    <div ref={containerRef} className={`relative ${className}`}>
+    <div ref={containerRef} className={className || "relative h-full w-full"}>
       <video
         ref={videoRef}
         src={src}
