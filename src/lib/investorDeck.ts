@@ -40,7 +40,7 @@ export const investorHeroCopy = {
 };
 
 export const investorProofCopy = {
-  title: "In the dining room.",
+  title: "Proven concept.",
   intro:
     "We operate a proven robotic kitchen in a customer-facing restaurant.",
 };

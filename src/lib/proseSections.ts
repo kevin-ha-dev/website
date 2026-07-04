@@ -32,21 +32,21 @@ export const howItWorksSections: ProseSection[] = [
 
 export const investorThesisSections: ProseSection[] = [
   {
-    heading: "Market",
+    heading: "Cost of goods",
     body: [
-      "Labor churn in food service is structural. Kitchens scale assembly by headcount, not throughput per square foot.",
+      "BurgerBots helps operators make better cost of goods decisions through consistency, efficiency, and transparency.",
     ],
   },
   {
-    heading: "Problem",
+    heading: "Customer service",
     body: [
-      "Legacy kitchen robots required rebuilds, integrators, and code-heavy menu changes; deployability stalled adoption.",
+      "Every order built the same way, every time. Your team moves from the line to the floor with service that builds trust.",
     ],
   },
   {
-    heading: "Approach",
+    heading: "Restaurant systems",
     body: [
-      "BurgerBots learns from live demonstration, installs into existing kitchens in hours, and runs alongside staff at sub-mm repeatability.",
+      "We reshape how your restaurant runs, from assembly to operations, with a consistent product and an experience built for the future of food.",
     ],
   },
 ];

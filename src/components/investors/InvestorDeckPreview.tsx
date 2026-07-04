@@ -10,7 +10,7 @@ export function InvestorDeckPreview() {
     <section className="section-shell border-b border-text-primary/10 bg-background">
       <div className="mx-auto max-w-[1200px]">
         <InvestorSectionGrid
-          title="What's inside."
+          title="What's inside our deck."
           className="border-t-0 pt-0"
         >
           {investorDeckTopics.map((topic, i) => (
