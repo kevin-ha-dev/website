@@ -52,7 +52,8 @@ export function Hero() {
 
       <div
         aria-hidden
-        className="pointer-events-none absolute top-1/2 right-[var(--spacing-page-x)] z-0 hidden -translate-x-8 -translate-y-[calc(50%+0.35in)] items-center justify-end md:flex"
+        className="pointer-events-none absolute top-1/2 right-[var(--spacing-page-x)] z-0 hidden items-center justify-end md:flex"
+        style={{ transform: "translate(-2rem, calc(-50% - .5in))" }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
