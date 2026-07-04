@@ -75,7 +75,7 @@ export function PixelMosaicShowcase() {
           A look inside the kitchen.
         </h2>
         <p className="type-body-lg mt-3 max-w-xl">
-          Photos and clips from the line — B.O.B. at work.
+          Photos and clips from the line. B.O.B. at work.
         </p>
       </FadeIn>
 

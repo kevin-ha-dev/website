@@ -64,7 +64,7 @@ export const systemModules: SystemModule[] = [
     id: "intelligence",
     name: "Intelligence",
     description:
-      "On-device ML inference powers recipe learning, vision-based quality checks, and throughput optimization locally — no cloud round-trips during production.",
+      "On-device ML inference powers recipe learning, vision-based quality checks, and throughput optimization locally, with no cloud round-trips during production.",
     specs: [
       "On-device ML inference",
       "Vision-based quality checks",

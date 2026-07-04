@@ -25,7 +25,7 @@ export function MetricsGrid(props: MetricsGridProps) {
   const embedded = variant === "investor" ? (props.embedded ?? false) : false;
 
   const sectionClass = [
-    !embedded && "section-shell",
+    !embedded && (variant === "product" ? "page-x mt-8 md:mt-12" : "section-shell"),
     embedded && "page-x",
     variant === "investor" &&
       !embedded &&
@@ -42,16 +42,16 @@ export function MetricsGrid(props: MetricsGridProps) {
     const productMetrics = metrics as ProductMetric[];
     return (
       <section className={sectionClass}>
-        <div className="mx-auto grid w-full max-w-[1200px] grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <div className="mx-auto grid w-full max-w-[1200px] grid-cols-2 divide-x divide-y divide-text-primary/10 border-t border-text-primary/10 lg:grid-cols-4 lg:divide-y-0">
           {productMetrics.map((stat, i) => (
             <FadeIn key={stat.unit} delay={i * 0.08}>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-1.5 px-5 py-8 md:px-6 md:py-10 lg:px-8">
                 <p className="type-metric text-text-primary">{stat.value}</p>
-                <p className="text-sm font-semibold uppercase tracking-wider text-text-primary">
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-text-primary">
                   {stat.unit}
                 </p>
                 {stat.label ? (
-                  <p className="type-body-sm">{stat.label}</p>
+                  <p className="type-body-sm mt-1 leading-snug">{stat.label}</p>
                 ) : null}
               </div>
             </FadeIn>

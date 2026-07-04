@@ -109,12 +109,16 @@ export function PixelMosaicShowcase() {
   return (
     <section className="page-x section-y-md bg-background">
       <FadeIn className="mb-10 md:mb-14">
-        <h2 className="type-heading-xl text-text-primary">
-          A look inside the kitchen.
-        </h2>
-        <p className="type-body-lg mt-3 max-w-xl">
-          Photos and clips from the line — B.O.B. at work.
-        </p>
+        <div className="flex flex-col gap-2">
+          <h2 className="type-heading-xl text-text-primary">
+            A look inside the kitchen.
+          </h2>
+          <p className="type-heading-md leading-snug text-text-primary">
+            &ldquo;Side by side,{" "}
+            <span className="font-semibold text-brand">not head to head.</span>
+            &rdquo;
+          </p>
+        </div>
       </FadeIn>
 
       <div className="grid grid-cols-2 gap-4 md:grid-cols-2 md:gap-5">

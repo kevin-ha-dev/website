@@ -6,7 +6,7 @@ export function Hero() {
     <section className="relative flex min-h-svh w-full items-center overflow-hidden bg-background">
       <div className="page-x relative z-10 flex w-full -translate-y-[0.35in] items-center justify-between gap-12 py-16 max-md:flex-col max-md:items-start max-md:gap-6">
         <div className="relative z-10 flex max-w-2xl flex-col items-start gap-5">
-          <p className="type-eyebrow">Los Gatos, CA · Open Tues–Sun</p>
+          <p className="type-eyebrow">Los Gatos, CA · Open Tues to Sun</p>
 
           <h1 className="type-display-xl">
             <span className="block text-text-primary">Made by robots.</span>

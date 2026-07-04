@@ -21,7 +21,7 @@ export const menuHighlights: MenuItem[] = [
     id: "chicken",
     name: "Chicken Burger",
     description:
-      "Crispy fried chicken, stacked with lettuce, tomato, and onion — built to spec every time.",
+      "Crispy fried chicken, stacked with lettuce, tomato, and onion, built to spec every time.",
     note: "Golden crunch on the outside, same precise build on every order.",
     ctaLabel: "Try Chicken Burger →",
     image: "/assets/menu/chicken-burger.png",
@@ -31,7 +31,7 @@ export const menuHighlights: MenuItem[] = [
     name: "Lemongrass Tofu Burger",
     description:
       "Seared tofu with lemongrass, crisp produce, and the same sub-mm care as everything on the line.",
-    note: "Bold lemongrass flavor, layered to spec — no shortcuts, no compromise.",
+    note: "Bold lemongrass flavor, layered to spec. No shortcuts, no compromise.",
     ctaLabel: "Try Lemongrass Tofu →",
     image: "/assets/menu/lemongrass-tofu-burger.png",
   },

@@ -52,15 +52,8 @@ export const buyHardwareSection: HardwareSpecSection = {
     {
       title: "Requirements",
       specs: [
-        { label: "Power", value: "208–240 VAC" },
+        { label: "Power", value: "208 to 240 VAC" },
         { label: "Connectivity", value: "WiFi" },
-      ],
-    },
-    {
-      title: "Deployment",
-      specs: [
-        { label: "Delivery", value: "3–6 mo" },
-        { label: "Setup", value: "7 days" },
       ],
     },
     {
@@ -76,7 +69,7 @@ export const buyHardwareSection: HardwareSpecSection = {
 
 export const investorHardwareSection: HardwareSpecSection = {
   eyebrow: "Hardware",
-  title: "Deployment at a glance",
+  title: "International at a glance",
   intro:
     "System layout is configurable. Footprint and station placement can be adjusted to match a given kitchen, not the other way around.",
   footprint: standardFootprint,
@@ -84,15 +77,15 @@ export const investorHardwareSection: HardwareSpecSection = {
     {
       title: "Requirements",
       specs: [
-        { label: "Power", value: "208–240 VAC" },
+        { label: "Power", value: "208 to 240 VAC" },
         { label: "Connectivity", value: "WiFi" },
       ],
     },
     {
-      title: "Deployment",
+      title: "International",
       specs: [
-        { label: "Delivery", value: "3–6 mo" },
-        { label: "Setup", value: "7 days" },
+        { label: "Delivery", value: "3 to 6 mo" },
+        { label: "Setup", value: "On-site" },
       ],
     },
     {

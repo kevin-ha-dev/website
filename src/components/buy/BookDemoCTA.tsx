@@ -9,7 +9,7 @@ const callTopics = [
   },
   {
     title: "Kitchen fit",
-    description: "Same-day install in the layout you already run — no rebuild required.",
+    description: "Same-day install in the layout you already run, no rebuild required.",
   },
   {
     title: "Menu training",
@@ -19,15 +19,15 @@ const callTopics = [
 
 export function BookDemoCTA() {
   return (
-    <section className="page-x border-t border-dashed border-border-dark bg-surface-dark py-[var(--spacing-section-sm)]">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
-        <FadeIn className="flex flex-col gap-5">
+    <section className="page-x bg-surface-dark py-[var(--spacing-section-sm)]">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-12 gap-x-6 gap-y-8 md:gap-x-8">
+        <FadeIn className="col-span-12 flex flex-col gap-5 md:col-span-5">
           <div>
-            <p className="type-eyebrow-on-dark">Next step</p>
-            <h2 className="type-heading-xl mt-2 text-text-on-dark">
+            <p className="type-eyebrow-on-dark">03 · Next step</p>
+            <h2 className="type-heading-md mt-2 text-text-on-dark">
               Ready to put B.O.B. in your kitchen?
             </h2>
-            <p className="mt-3 max-w-md leading-relaxed text-text-on-dark-muted">
+            <p className="mt-3 max-w-xs leading-relaxed text-text-on-dark-muted">
               Book a call and we&apos;ll walk you through ownership, setup, and
               menu training for your operation.
             </p>
@@ -51,7 +51,7 @@ export function BookDemoCTA() {
           </div>
         </FadeIn>
 
-        <FadeIn delay={0.1} className="flex h-full flex-col gap-3">
+        <FadeIn delay={0.1} className="col-span-12 flex h-full flex-col gap-3 md:col-span-6 md:col-start-7">
           <p className="type-eyebrow-on-dark">On the call</p>
           <div className="flex flex-1 flex-col divide-y divide-border-dark border border-border-dark">
             {callTopics.map((topic, i) => (

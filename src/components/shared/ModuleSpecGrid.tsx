@@ -39,7 +39,7 @@ export function ModuleSpecGrid({
                 {module.specs?.map((spec) => (
                   <li
                     key={spec}
-                    className="type-body-sm before:mr-2 before:text-text-primary/30 before:content-['—']"
+                    className="type-body-sm before:mr-2 before:text-text-primary/30 before:content-['·']"
                   >
                     {spec}
                   </li>

@@ -3,6 +3,8 @@ import Link from "next/link";
 
 type FooterProps = {
   variant?: "full" | "minimal";
+  /** Match the 1200px content column used on buy/investor pages */
+  contentWidth?: "1200";
 };
 
 function SocialIcons() {
@@ -76,18 +78,25 @@ function SocialIcons() {
   );
 }
 
-export function Footer({ variant = "full" }: FooterProps) {
+export function Footer({ variant = "full", contentWidth }: FooterProps) {
+  const innerClass =
+    contentWidth === "1200" ? "mx-auto w-full max-w-[1200px]" : "";
+
   if (variant === "minimal") {
     return (
       <footer className="flex flex-col bg-surface-dark">
         <div className="border-t border-dashed border-border-dark" />
-        <div className="page-x flex flex-col items-center gap-6 py-10 md:flex-row md:justify-between">
-          <p className="type-eyebrow text-center text-text-on-dark-muted md:text-left">
-            <span className="block">Breaking Dawn & First Born</span>
-            <span className="block">160 W Main St, 95030</span>
-          </p>
-          <div className="flex items-center justify-center gap-8">
-            <SocialIcons />
+        <div className="page-x py-10">
+          <div
+            className={`flex flex-col items-center gap-6 md:flex-row md:justify-between ${innerClass}`}
+          >
+            <p className="type-eyebrow text-center text-text-on-dark-muted md:text-left">
+              <span className="block">Breaking Dawn & First Born</span>
+              <span className="block">160 W Main St, 95030</span>
+            </p>
+            <div className="flex items-center justify-center gap-8">
+              <SocialIcons />
+            </div>
           </div>
         </div>
       </footer>

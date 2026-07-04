@@ -7,12 +7,12 @@ const faqs = [
   {
     question: "Do I need to redesign my kitchen to install it?",
     answer:
-      "No. BurgerBots is designed to work in the kitchen you already have, and the layout can be configured to fit your space. No construction, no conveyor overhauls, no floor plan changes. It's running within about a week.",
+      "No. BurgerBots is designed to work in the kitchen you already have, and the layout can be configured to fit your space. No construction, no conveyor overhauls, no floor plan changes.",
   },
   {
-    question: "How does BurgerBots learn new menu items?",
+    question: "What does setup look like?",
     answer:
-      "You show it a few times and it picks it up. No code, no specialist, no downtime. Your team does the demonstration, BurgerBots does the rest. Menu updates that used to take weeks now take an afternoon.",
+      "Our team comes in and handles it. We map the system to your kitchen layout, train it on your menu, and get your staff comfortable running it — all without shutting down service.",
   },
   {
     question: "How fast can it actually work?",
@@ -70,14 +70,15 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 
 export function FAQSection() {
   return (
-    <section className="section-shell mb-11 bg-background">
-      <div className="grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-[1fr_1.7fr]">
-        <FadeIn>
-          <h2 className="type-heading-xl text-text-primary">
+    <section className="section-shell border-b border-text-primary/10 bg-background">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-12 gap-x-6 gap-y-8 md:gap-x-8">
+        <FadeIn className="col-span-12 md:col-span-4">
+          <p className="type-eyebrow mb-3">02 · FAQ</p>
+          <h2 className="type-heading-md text-text-primary">
             Your questions answered
           </h2>
         </FadeIn>
-        <div className="flex flex-col">
+        <div className="col-span-12 flex flex-col md:col-span-8 md:col-start-5">
           {faqs.map((faq, i) => (
             <FadeIn key={faq.question} delay={i * 0.08}>
               <FAQItem question={faq.question} answer={faq.answer} />

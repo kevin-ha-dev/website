@@ -1,31 +1,22 @@
 import { InvestorCTA } from "@/components/investors/InvestorCTA";
-import { InvestorDifferentiation } from "@/components/investors/InvestorDifferentiation";
-import { InvestorFounder } from "@/components/investors/InvestorFounder";
+import { InvestorDeckPreview } from "@/components/investors/InvestorDeckPreview";
 import { InvestorHero } from "@/components/investors/InvestorHero";
-import { InvestorTechnology } from "@/components/investors/InvestorTechnology";
-import { InvestorThesis } from "@/components/investors/InvestorThesis";
-import { SpecTable } from "@/components/shared/SpecTable";
 import { Footer } from "@/components/layout/Footer";
-import { investorHardwareSection } from "@/lib/hardwareSpecs";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Investor Material | BURGERBOTS",
   description:
-    "BurgerBots investor overview — live robotic kitchen assembly at 160 W Main Street, Los Gatos, with demonstration-based learning and scalable deployment.",
+    "BurgerBots investor overview: live robotic kitchen assembly in Los Gatos, with demonstration-based learning and scalable rollout.",
 };
 
 export default function InvestorsPage() {
   return (
     <main className="relative flex min-h-screen flex-col bg-background text-text-primary">
       <InvestorHero />
-      <SpecTable {...investorHardwareSection} background />
-      <InvestorThesis />
-      <InvestorFounder />
-      <InvestorDifferentiation />
-      <InvestorTechnology />
+      <InvestorDeckPreview />
       <InvestorCTA />
-      <Footer variant="minimal" />
+      <Footer variant="minimal" contentWidth="1200" />
     </main>
   );
 }

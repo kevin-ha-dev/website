@@ -17,14 +17,14 @@ export const productMetrics: ProductMetric[] = [
     label: "",
   },
   {
-    value: "7 days",
-    unit: "install",
+    value: "6-axis",
+    unit: "robot arm",
     label: "",
   },
   {
-    value: "90 sec",
-    unit: "module swap",
-    label: "Hot-swap dispensary modules when the menu changes.",
+    value: "Gram-level",
+    unit: "sauce control",
+    label: "",
   },
   {
     value: "Sub-mm",
@@ -40,7 +40,7 @@ export const investorMetrics: InvestorMetric[] = [
     detail: "Garnish to assembled burger",
   },
   {
-    label: "Deployment",
+    label: "International",
     value: "< 1 day",
     detail: "Install and operational same day, no structural changes",
   },

@@ -2,8 +2,6 @@ import { BookDemoCTA } from "@/components/buy/BookDemoCTA";
 import { FAQSection } from "@/components/buy/FAQSection";
 import { ProductHero } from "@/components/buy/ProductHero";
 import { ProductStats } from "@/components/buy/ProductStats";
-import { ProductVideo } from "@/components/buy/ProductVideo";
-import { SystemModulesSection } from "@/components/buy/SystemModulesSection";
 import { SpecTable } from "@/components/shared/SpecTable";
 import { Footer } from "@/components/layout/Footer";
 import { buyHardwareSection } from "@/lib/hardwareSpecs";
@@ -12,7 +10,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Own a BurgerBot | BURGERBOTS",
   description:
-    "Meet B.O.B. — the BurgerBot system that fits your kitchen. Setup in about a week, 27 seconds a burger, learns from live demonstrations.",
+    "Meet B.O.B., the BurgerBot system that fits your kitchen. Our team handles setup, 27 seconds a burger, learns from live demonstrations.",
 };
 
 export default function BuyPage() {
@@ -20,12 +18,10 @@ export default function BuyPage() {
     <main className="relative flex min-h-screen flex-col bg-background text-text-primary">
       <ProductHero />
       <ProductStats />
-      <ProductVideo />
-      <SystemModulesSection />
-      <SpecTable {...buyHardwareSection} />
+      <SpecTable {...buyHardwareSection} layout="split" />
       <FAQSection />
       <BookDemoCTA />
-      <Footer variant="minimal" />
+      <Footer variant="minimal" contentWidth="1200" />
     </main>
   );
 }

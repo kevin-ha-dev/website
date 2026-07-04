@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { BobFactCards } from "@/components/home/BobFactCards";
-import { InspiredByHumans } from "@/components/home/InspiredByHumans";
 import { MenuHighlights } from "@/components/home/MenuHighlights";
 import { PixelMosaicShowcase } from "@/components/home/PixelMosaicShowcase";
 import { VisitSection } from "@/components/home/VisitSection";
@@ -17,7 +16,6 @@ export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col">
       <Hero />
-      <InspiredByHumans />
       <BobFactCards />
       <PixelMosaicShowcase />
       <MenuHighlights />

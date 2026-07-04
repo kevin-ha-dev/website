@@ -12,6 +12,7 @@ type SpecTableProps = {
   footprint: FootprintSpec;
   groups: HardwareSpecGroup[];
   background?: boolean;
+  layout?: "stacked" | "split";
 };
 
 const footprintDimensions: {
@@ -72,15 +73,19 @@ export function SpecTable({
   footprint,
   groups,
   background = false,
+  layout = "stacked",
 }: SpecTableProps) {
   let specIndex = 0;
+  const split = layout === "split";
 
   return (
     <section
-      className={`section-shell ${background ? "bg-surface-muted pt-[calc(var(--spacing-section-md)+1.5rem)]!" : ""}`}
+      className={`section-shell ${background ? "bg-surface-muted" : ""} ${split ? "border-b border-text-primary/10" : background ? "pt-[calc(var(--spacing-section-md)+1.5rem)]!" : ""}`}
     >
-      <div className="mx-auto flex w-full max-w-[770px] flex-col gap-8 md:gap-10">
-        <FadeIn className="w-full">
+      <div
+        className={`mx-auto w-full ${split ? "grid max-w-[1200px] grid-cols-12 gap-x-6 gap-y-10 md:gap-x-8" : "flex max-w-[770px] flex-col gap-8 md:gap-10"}`}
+      >
+        <FadeIn className={split ? "col-span-12 md:col-span-4" : "w-full"}>
           <div className="flex w-full flex-col gap-2">
             <p className="type-eyebrow">{eyebrow}</p>
             <h2 className="type-heading-md font-semibold text-text-primary">
@@ -90,6 +95,13 @@ export function SpecTable({
           </div>
         </FadeIn>
 
+        <div
+          className={
+            split
+              ? "col-span-12 flex flex-col gap-10 md:col-span-8 md:col-start-5"
+              : "contents"
+          }
+        >
         <div className="border-y border-text-primary/10 py-6 md:py-8">
           <FadeIn delay={0.06}>
             <p className="type-eyebrow mb-5 font-semibold text-text-primary">
@@ -126,6 +138,7 @@ export function SpecTable({
               />
             );
           })}
+        </div>
         </div>
       </div>
     </section>

@@ -10,8 +10,8 @@ export const siteConfig = {
     address: "160 W Main Street",
     city: "Los Gatos, CA 95030",
     hours: [
-      { days: "Tues – Sat", time: "9:00 am – 8:00 pm" },
-      { days: "Sun", time: "8:00 am – 3:00 pm" },
+      { days: "Tues to Sat", time: "9:00 am to 8:00 pm" },
+      { days: "Sun", time: "8:00 am to 3:00 pm" },
     ],
     yelpUrl: "https://www.yelp.com/biz/breaking-dawn-brunch-los-gatos",
     openTableUrl: "https://www.opentable.com/r/first-born-los-gatos",

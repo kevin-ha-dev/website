@@ -13,15 +13,15 @@ export function InvestorTechnology() {
   const { eyebrow, title, body, image } = abbPartnershipCopy;
 
   return (
-    <section className="section-shell bg-surface-muted py-section-lg!">
-      <div className="mx-auto max-w-5xl">
-        <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-[1.1fr_0.9fr] md:items-stretch md:gap-14">
-          <FadeIn className="flex flex-col gap-6">
+    <section className="section-shell bg-surface-muted">
+      <div className="mx-auto max-w-[1200px]">
+        <div className="grid grid-cols-12 items-start gap-x-6 gap-y-10 md:gap-x-8 md:items-stretch">
+          <FadeIn className="col-span-12 flex flex-col gap-6 md:col-span-5">
             <div>
               <p className="type-eyebrow">{eyebrow}</p>
               <h2 className="type-heading-md mt-2 text-text-primary">{title}</h2>
             </div>
-            <p className="type-body-lg max-w-lg">{body}</p>
+            <p className="type-body max-w-md leading-relaxed">{body}</p>
 
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               {abbPartnershipProof.map((item) => (
@@ -52,22 +52,22 @@ export function InvestorTechnology() {
             </div>
           </FadeIn>
 
-          <FadeIn delay={0.08} className="md:h-full">
-            <PixelFrame className="md:h-full">
-              <div className="relative aspect-4/3 w-full md:aspect-auto md:h-full">
+          <FadeIn delay={0.08} className="col-span-12 md:col-span-6 md:col-start-7 md:h-full">
+            <PixelFrame className="h-full w-full">
+              <div className="relative aspect-video w-full md:aspect-auto md:h-full md:min-h-112">
                 <Image
                   src={image.src}
                   alt={image.alt}
                   fill
-                  sizes="(max-width: 768px) 100vw, 420px"
-                  className="object-cover object-[center_calc(50%+)]"
+                  sizes="(max-width: 768px) 100vw, 520px"
+                  className="object-cover object-center"
                 />
               </div>
             </PixelFrame>
           </FadeIn>
         </div>
 
-        <FadeIn className="mt-14 border-t border-dashed border-text-primary/10 pt-10">
+        <FadeIn className="mt-12 border-t border-text-primary/10 pt-10 md:mt-14">
           <p className="type-eyebrow mb-5">ABB & industry coverage</p>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-5">
             {abbPressLinks.map((article) => (
@@ -76,7 +76,7 @@ export function InvestorTechnology() {
                 href={article.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col gap-8"
+                className="group flex flex-col gap-6"
               >
                 <PixelFrame label={article.source} labelPosition="overlay">
                   <div className="relative aspect-square w-full overflow-hidden">
