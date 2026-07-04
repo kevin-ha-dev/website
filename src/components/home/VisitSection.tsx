@@ -37,8 +37,7 @@ export function VisitSection() {
 
         <FadeIn delay={0.1} className="flex min-w-0 flex-col justify-between gap-6 md:gap-6">
           <div>
-            <p className="type-eyebrow">Swing By</p>
-            <h2 className="type-heading-xl mt-2 text-text-primary">
+            <h2 className="type-heading-xl text-text-primary">
               Servin&apos; Burgs
             </h2>
             <div className="mt-4 flex flex-col gap-1 text-text-primary">

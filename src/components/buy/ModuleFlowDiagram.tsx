@@ -198,7 +198,7 @@ export function ModuleFlowDiagram({
                   </span>
                   <StationIcon index={index} active={isActive} />
                   <span className="w-full text-center">
-                    <span className="block font-display text-sm font-semibold tracking-tight text-text-primary">
+                    <span className="block font-sans text-sm font-semibold tracking-tight text-text-primary">
                       {module.name}
                     </span>
                     {module.tagline ? (

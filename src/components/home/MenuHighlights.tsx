@@ -9,8 +9,7 @@ export function MenuHighlights() {
   return (
     <section className="page-x border-t border-dashed border-text-primary/10 bg-background py-[calc(var(--spacing-section-md)+0.375in)]">
       <FadeIn className="mb-12 md:mb-16">
-        <p className="type-eyebrow">The menu</p>
-        <h2 className="type-heading-xl mt-2 text-text-primary">
+        <h2 className="type-heading-xl text-text-primary">
           What to order when you visit.
         </h2>
       </FadeIn>

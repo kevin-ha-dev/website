@@ -7,8 +7,7 @@ export function BobFactCards() {
   return (
     <section className="page-x section-y-md bg-background">
       <FadeIn className="mb-8 md:mb-10">
-        <p className="type-eyebrow">Meet B.O.B.</p>
-        <h2 className="type-heading-md mt-2 text-text-primary">
+        <h2 className="type-heading-md text-text-primary">
           A few things about our robot chef.
         </h2>
       </FadeIn>
@@ -21,7 +20,7 @@ export function BobFactCards() {
                 <p className="type-heading-md font-bold leading-none text-text-primary">
                   {fact.value}
                 </p>
-                <p className="text-xs font-medium tracking-label text-text-secondary">
+                <p className="type-detail">
                   {fact.label}
                 </p>
               </div>

@@ -29,7 +29,7 @@ export function InvestorTechnology() {
                   key={item.label}
                   className="border border-text-primary/10 bg-background px-4 py-2.5"
                 >
-                  <p className="font-display text-lg font-bold tracking-tight text-text-primary">
+                  <p className="font-sans text-lg font-bold tracking-tight text-text-primary">
                     {item.value}
                   </p>
                   <p className="type-body-sm mt-0.5">{item.label}</p>

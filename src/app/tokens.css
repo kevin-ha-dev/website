@@ -8,8 +8,10 @@
        next/font should define these variables in layout.tsx
        ========================================================= */
   
-    --bb-font-body: var(--font-inter-tight), Arial, sans-serif;
-    --bb-font-display: var(--font-space-grotesk), Arial, sans-serif;
+    --bb-font-sans: var(--font-host-grotesk), system-ui, sans-serif;
+    --bb-font-body: var(--bb-font-sans);
+    --bb-font-display: var(--bb-font-sans);
+    --bb-font-mono: var(--font-dm-mono), ui-monospace, monospace;
   
     /* =========================================================
        BRAND COLORS
@@ -342,8 +344,9 @@
   
   @theme inline {
     /* Fonts */
-    --font-sans: var(--bb-font-body);
-    --font-display: var(--bb-font-display);
+    --font-sans: var(--font-host-grotesk), system-ui, sans-serif;
+    --font-display: var(--font-host-grotesk), system-ui, sans-serif;
+    --font-mono: var(--font-dm-mono), ui-monospace, monospace;
   
     /* Core colors */
     --color-background: var(--bb-color-background);

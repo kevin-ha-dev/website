@@ -1,11 +1,12 @@
-import { Inter_Tight, Space_Grotesk } from "next/font/google";
+import { DM_Mono, Host_Grotesk } from "next/font/google";
 
-export const interTight = Inter_Tight({
-  variable: "--font-inter-tight",
+export const hostGrotesk = Host_Grotesk({
+  variable: "--font-host-grotesk",
   subsets: ["latin"],
 });
 
-export const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+export const dmMono = DM_Mono({
+  variable: "--font-dm-mono",
   subsets: ["latin"],
+  weight: ["400", "500"],
 });

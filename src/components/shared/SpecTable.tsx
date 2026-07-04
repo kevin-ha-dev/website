@@ -26,7 +26,7 @@ const footprintDimensions: {
 
 function SpecValue({ value }: { value: string }) {
   return (
-    <p className="font-display text-lg font-semibold tracking-tight text-text-primary">
+    <p className="font-mono text-lg font-semibold tracking-tight text-text-primary">
       {value}
     </p>
   );
@@ -112,7 +112,7 @@ export function SpecTable({
             {footprintDimensions.map(({ key, label }, i) => (
               <FadeIn key={key} delay={0.08 + i * 0.05} className="min-w-0">
                 <div className="flex min-w-0 flex-col gap-1.5">
-                  <p className="font-display text-2xl font-semibold tracking-tight text-text-primary sm:text-[1.75rem]">
+                  <p className="font-mono text-2xl font-semibold tracking-tight text-text-primary sm:text-[1.75rem]">
                     {footprint[key]}
                   </p>
                   <p className="type-eyebrow">{label}</p>

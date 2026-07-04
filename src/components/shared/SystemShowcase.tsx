@@ -42,7 +42,7 @@ export function SystemShowcase() {
                 <span className="type-eyebrow text-[0.625rem]">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <h3 className="font-display text-lg font-semibold tracking-tight text-text-primary">
+                <h3 className="font-sans text-lg font-semibold tracking-tight text-text-primary">
                   {module.name}
                 </h3>
               </div>
