@@ -34,13 +34,13 @@ export const investorThesisSections: ProseSection[] = [
   {
     heading: "Cost of goods",
     body: [
-      "BurgerBots helps operators make better cost of goods decisions through consistency, efficiency, and transparency.",
+      "BurgerBots helps operators make better cost of goods decisions through our inventory software.",
     ],
   },
   {
     heading: "Customer service",
     body: [
-      "Every order built the same way, every time. Your team moves from the line to the floor with service that builds trust.",
+      "We provide consistency, efficiency, and transparency. Every order built the same, every time.",
     ],
   },
   {

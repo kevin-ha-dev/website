@@ -78,7 +78,7 @@ export function SpecTable({
 
   return (
     <section
-      className={`section-shell ${background ? "bg-surface-muted" : ""} ${split ? "border-b border-text-primary/10" : background ? "pt-[calc(var(--spacing-section-md)+1.5rem)]!" : ""}`}
+      className={`section-shell ${background ? "bg-surface-muted" : ""} ${split ? "mt-8 border-b border-text-primary/10 md:mt-12" : background ? "pt-[calc(var(--spacing-section-md)+1.5rem)]!" : ""}`}
     >
       <div
         className={`mx-auto w-full ${split ? "grid max-w-[1200px] grid-cols-12 gap-x-6 gap-y-10 md:gap-x-8" : "flex max-w-[770px] flex-col gap-8 md:gap-10"}`}
