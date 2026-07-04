@@ -57,7 +57,7 @@ export function InvestorHero() {
               alt={image.alt}
               fill
               sizes="(max-width: 768px) 100vw, 520px"
-              className="object-cover object-[center_45%]"
+              className="object-cover object-[center_80%]"
               priority
             />
           </div>
