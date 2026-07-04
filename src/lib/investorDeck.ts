@@ -53,6 +53,8 @@ export const investorProofPoints = [
 
 export const investorFounderCopy = {
   eyebrow: "Founder",
+  quote:
+    "Every big invention was built by just a kid who wanted to play and try something new",
   body:
     "Elizabeth Truong has over two decades as a restaurant operator. She leads alongside robotics and software engineers and restaurant operators, all enthused to reshape the future of food.",
   image: {

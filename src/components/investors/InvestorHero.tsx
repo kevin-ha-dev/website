@@ -5,6 +5,7 @@ import {
   InvestorGridRow,
   InvestorSectionGrid,
 } from "@/components/investors/InvestorSectionGrid";
+import { PressCard } from "@/components/investors/PressCard";
 import {
   investorDeckCopy,
   investorHeroCopy,
@@ -56,7 +57,7 @@ export function InvestorHero() {
               alt={image.alt}
               fill
               sizes="(max-width: 768px) 100vw, 520px"
-              className="object-cover object-[center_65%]"
+              className="object-cover object-[center_45%]"
               priority
             />
           </div>
@@ -123,79 +124,54 @@ export function InvestorHero() {
                 <p className="type-body leading-relaxed">{point}</p>
               </InvestorGridRow>
             ))}
-
-            <FadeIn delay={0.2} className="mt-10 border-t border-text-primary/10 pt-10 md:mt-12 md:pt-12">
-              <p className="type-eyebrow mb-6 font-semibold text-text-primary md:mb-8">Press</p>
-              <div className="grid grid-cols-12 gap-x-6 gap-y-10 md:gap-x-8">
-                {abbPressLinks.map((article, i) => (
-                  <FadeIn
-                    key={article.href}
-                    delay={0.24 + i * 0.06}
-                    className="col-span-12 sm:col-span-4"
-                  >
-                    <Link
-                      href={article.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex flex-col"
-                    >
-                      <div className="relative aspect-square w-full overflow-hidden border border-text-primary/12 bg-background">
-                        <Image
-                          src={article.image.src}
-                          alt={article.image.alt}
-                          fill
-                          sizes="(max-width: 640px) 100vw, 260px"
-                          quality={92}
-                          className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.02]"
-                          style={
-                            article.image.objectPosition
-                              ? { objectPosition: article.image.objectPosition }
-                              : undefined
-                          }
-                        />
-                      </div>
-                      <p className="type-eyebrow mt-4 mb-1.5">{article.source}</p>
-                      <p className="text-sm font-medium leading-snug text-text-primary">
-                        <span className="underline decoration-transparent underline-offset-4 transition-[text-decoration-color] group-hover:decoration-text-primary/35">
-                          {article.title}
-                        </span>
-                        <span
-                          aria-hidden
-                          className="ml-1 inline-block text-text-secondary transition-transform group-hover:translate-x-0.5 group-hover:text-text-primary"
-                        >
-                          →
-                        </span>
-                      </p>
-                    </Link>
-                  </FadeIn>
-                ))}
-              </div>
-            </FadeIn>
           </InvestorSectionGrid>
+
+          <FadeIn
+            delay={0.2}
+            className="border-t border-text-primary/10 pt-10 md:pt-12"
+          >
+            <p className="type-heading-sm mb-6 text-text-primary md:mb-8">
+              Press
+            </p>
+            <div className="grid grid-cols-3 gap-3 sm:gap-5 md:gap-6 lg:gap-8">
+              {abbPressLinks.map((article, i) => (
+                <FadeIn key={article.href} delay={0.24 + i * 0.06}>
+                  <PressCard article={article} />
+                </FadeIn>
+              ))}
+            </div>
+          </FadeIn>
 
           <FadeIn
             delay={0.26}
             className="grid grid-cols-12 gap-x-6 gap-y-6 border-t border-text-primary/10 pt-10 md:gap-x-8 md:gap-y-8 md:pt-12"
           >
-            <div className="col-span-12 md:col-span-4">
-              <p className="type-eyebrow mb-3 font-semibold text-text-primary">
-                {investorFounderCopy.eyebrow}
-              </p>
-              <div className="relative aspect-[4/5] w-full overflow-hidden border border-text-primary/12 bg-text-primary/4">
+            <p className="type-heading-sm col-span-12 text-text-primary md:col-span-4">
+              {investorFounderCopy.eyebrow}
+            </p>
+            <div className="col-span-12 md:col-span-4 md:row-start-2">
+              <div className="relative aspect-[4/5] w-full max-w-[280px] overflow-hidden border border-text-primary/12 bg-text-primary/4">
                 <Image
                   src={investorFounderCopy.image.src}
                   alt={investorFounderCopy.image.alt}
                   fill
-                  sizes="(max-width: 768px) 100vw, 320px"
+                  sizes="(max-width: 768px) 100vw, 280px"
                   quality={92}
                   className="object-cover object-top"
                 />
               </div>
             </div>
-            <div className="col-span-12 flex flex-col justify-center md:col-span-8 md:col-start-5">
-              <p className="type-body max-w-lg leading-relaxed">
-                {investorFounderCopy.body}
-              </p>
+            <div className="col-span-12 flex flex-col gap-8 md:col-span-8 md:col-start-5 md:row-start-2 md:gap-10">
+              <blockquote className="max-w-[34rem]">
+                <p className="type-heading-md text-balance leading-tight tracking-tight text-text-primary">
+                  &ldquo;{investorFounderCopy.quote}&rdquo;
+                </p>
+              </blockquote>
+              <div className="max-w-lg border-t border-text-primary/10 pt-8">
+                <p className="type-body leading-relaxed">
+                  {investorFounderCopy.body}
+                </p>
+              </div>
             </div>
           </FadeIn>
         </div>
