@@ -8,8 +8,7 @@ export function BookDemoCTA() {
       <div className="mx-auto grid max-w-[1200px] grid-cols-12 gap-x-6 gap-y-8 md:gap-x-8">
         <FadeIn className="col-span-12 flex flex-col gap-5 md:col-span-5">
           <div>
-            <p className="type-eyebrow-on-dark">03 · Next step</p>
-            <h2 className="type-heading-md mt-2 text-text-on-dark">
+            <h2 className="type-heading-md text-text-on-dark">
               Ready to put B.O.B. in your kitchen?
             </h2>
             <p className="mt-3 max-w-xs leading-relaxed text-text-on-dark-muted">

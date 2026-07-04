@@ -16,7 +16,6 @@ export type HardwareSpecGroup = {
 };
 
 export type HardwareSpecSection = {
-  eyebrow: string;
   title: string;
   intro: string;
   footprint: FootprintSpec;
@@ -31,7 +30,6 @@ const standardFootprint: FootprintSpec = {
 };
 
 export const buyHardwareSection: HardwareSpecSection = {
-  eyebrow: "System specs",
   title: "Built for your kitchen",
   intro:
     "System layout is configurable. Footprint and station placement can be adjusted to match your kitchen, not the other way around.",
@@ -68,7 +66,6 @@ export const buyHardwareSection: HardwareSpecSection = {
 };
 
 export const investorHardwareSection: HardwareSpecSection = {
-  eyebrow: "Hardware",
   title: "International at a glance",
   intro:
     "System layout is configurable. Footprint and station placement can be adjusted to match a given kitchen, not the other way around.",

@@ -4,15 +4,13 @@ import { investorDeckCopy } from "@/lib/investorDeck";
 import { siteConfig } from "@/lib/siteConfig";
 
 export function InvestorCTA() {
-  const { eyebrow, title, description, ctaLabel, emailLabel } =
-    investorDeckCopy;
+  const { title, description, ctaLabel, emailLabel } = investorDeckCopy;
 
   return (
     <section className="page-x border-t border-text-primary/10 bg-surface-dark py-[var(--spacing-section-sm)]">
       <div className="mx-auto flex max-w-[1200px] flex-col gap-6">
         <FadeIn>
-          <p className="type-eyebrow-on-dark">{eyebrow}</p>
-          <h2 className="type-heading-xl mt-2 text-text-on-dark">{title}</h2>
+          <h2 className="type-heading-xl text-text-on-dark">{title}</h2>
           <p className="mt-4 max-w-md leading-relaxed text-text-on-dark-muted">
             {description}
           </p>

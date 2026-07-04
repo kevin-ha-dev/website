@@ -10,7 +10,6 @@ export function InvestorDeckPreview() {
     <section className="section-shell border-b border-text-primary/10 bg-background">
       <div className="mx-auto max-w-[1200px]">
         <InvestorSectionGrid
-          index="03 · In the deck"
           title="What's inside."
           className="border-t-0 pt-0"
         >

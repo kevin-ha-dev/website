@@ -11,7 +11,6 @@ export function ProductHero() {
         style={{ paddingTop: NAV_BAR_HEIGHT_PX + 72 }}
       >
         <div className="col-span-12 flex flex-col gap-5 md:col-span-5 lg:col-span-4">
-          <p className="type-eyebrow">01 · Own a BurgerBot</p>
           <h1 className="type-display-sm text-text-primary">
             Put B.O.B. in your kitchen.
           </h1>
@@ -37,9 +36,6 @@ export function ProductHero() {
               className="absolute inset-0 h-full w-full"
             />
           </div>
-          <p className="type-body-sm mt-3 tracking-wide text-text-secondary">
-            Fig. 01 · BurgerBots in action
-          </p>
         </div>
       </div>
     </section>

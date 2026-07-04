@@ -27,7 +27,6 @@ export const investorDeckTopics: DeckTopic[] = [
 ];
 
 export const investorDeckCopy = {
-  eyebrow: "Investor deck",
   title: "Full materials available on request.",
   description:
     "We share our deck, financial overview, and technical documentation with qualified investors. Reach out and we'll send everything over.",

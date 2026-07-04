@@ -3,7 +3,6 @@ import type { ReactNode } from "react";
 
 type InvestorSectionGridProps = {
   id?: string;
-  index: string;
   title: string;
   children: ReactNode;
   delay?: number;
@@ -12,7 +11,6 @@ type InvestorSectionGridProps = {
 
 export function InvestorSectionGrid({
   id,
-  index,
   title,
   children,
   delay = 0,
@@ -24,7 +22,6 @@ export function InvestorSectionGrid({
       className={`scroll-mt-[85px] grid grid-cols-12 gap-x-6 gap-y-6 border-t border-text-primary/10 pt-10 md:gap-x-8 md:gap-y-8 md:pt-14 ${className}`}
     >
       <FadeIn delay={delay} className="col-span-12 md:col-span-4">
-        <p className="type-eyebrow mb-3">{index}</p>
         <h2 className="type-heading-md text-text-primary">{title}</h2>
       </FadeIn>
       <div className="col-span-12 md:col-span-8 md:col-start-5">{children}</div>

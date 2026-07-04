@@ -34,9 +34,6 @@ export function InvestorHero() {
           style={{ paddingTop: NAV_BAR_HEIGHT_PX + 72 }}
         >
           <div className="grid grid-cols-12 gap-x-6 gap-y-5 md:gap-x-8">
-          <p className="type-eyebrow col-span-12 md:col-span-5 lg:col-span-4">
-            Investor material
-          </p>
           <h1 className="type-display-sm col-span-12 md:col-span-5 lg:col-span-4">
             <span className="block text-brand">Automating the line.</span>
             <span className="block text-text-primary">Scaling consistency.</span>
@@ -87,7 +84,6 @@ export function InvestorHero() {
         <div className="mx-auto w-full max-w-[1200px]">
           <InvestorSectionGrid
             id="thesis"
-            index="01 · Thesis"
             title="Why now."
             className="border-t-0 pt-0"
           >
@@ -111,7 +107,6 @@ export function InvestorHero() {
       >
         <div className="mx-auto max-w-[1200px]">
           <InvestorSectionGrid
-            index="02 · Proof"
             title={investorProofCopy.title}
             className="border-t-0 pt-0"
           >

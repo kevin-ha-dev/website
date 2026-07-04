@@ -83,7 +83,6 @@ export function FAQSection() {
     <section className="section-shell border-b border-text-primary/10 bg-background">
       <div className="mx-auto grid max-w-[1200px] grid-cols-12 gap-x-6 gap-y-8 md:gap-x-8">
         <FadeIn className="col-span-12 md:col-span-4">
-          <p className="type-eyebrow mb-3">02 · FAQ</p>
           <h2 className="type-heading-md text-text-primary">
             Your questions answered
           </h2>

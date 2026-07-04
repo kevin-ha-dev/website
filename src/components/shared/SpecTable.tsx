@@ -6,7 +6,6 @@ import type {
 } from "@/lib/hardwareSpecs";
 
 type SpecTableProps = {
-  eyebrow: string;
   title: string;
   intro: string;
   footprint: FootprintSpec;
@@ -67,7 +66,6 @@ function SpecGroup({
 }
 
 export function SpecTable({
-  eyebrow,
   title,
   intro,
   footprint,
@@ -87,7 +85,6 @@ export function SpecTable({
       >
         <FadeIn className={split ? "col-span-12 md:col-span-4" : "w-full"}>
           <div className="flex w-full flex-col gap-2">
-            <p className="type-eyebrow">{eyebrow}</p>
             <h2 className="type-heading-md font-semibold text-text-primary">
               {title}
             </h2>
