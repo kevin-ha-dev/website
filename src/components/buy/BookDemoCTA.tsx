@@ -27,7 +27,7 @@ export function BookDemoCTA() {
               Book a call →
             </Link>
             <a
-              href={`mailto:${siteConfig.salesEmail}`}
+              href={`mailto:${siteConfig.contactEmail}`}
               className="inline-flex items-center justify-center border border-white/20 px-8 py-4 text-sm font-semibold text-text-on-dark transition-colors hover:bg-white/5"
             >
               Email us →

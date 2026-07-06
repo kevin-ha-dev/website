@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { FadeIn } from "@/components/shared/FadeIn";
+import { siteConfig } from "@/lib/siteConfig";
 
 type FAQ = {
   question: string;
@@ -54,10 +55,10 @@ const visitFaqs: FAQ[] = [
       <>
         We love adding good humans to the roster. Send us your resume at{" "}
         <a
-          href="mailto:realhuman@burgerbots.com"
+          href={`mailto:${siteConfig.contactEmail}`}
           className="font-medium text-text-primary underline underline-offset-2"
         >
-          realhuman@burgerbots.com
+          {siteConfig.contactEmail}
         </a>
         , and B.O.B. (or one of his underlings) will get back to you.
       </>

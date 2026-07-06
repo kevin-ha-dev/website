@@ -27,10 +27,10 @@ const faqs = [
       <>
         You bet. Get in touch with us at{" "}
         <a
-          href="mailto:realhuman@burgerbots.com"
+          href={`mailto:${siteConfig.contactEmail}`}
           className="font-medium text-text-primary underline underline-offset-2"
         >
-          realhuman@burgerbots.com
+          {siteConfig.contactEmail}
         </a>{" "}
         so we can talk burgs &apos;n bots, or{" "}
         <a
