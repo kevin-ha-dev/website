@@ -46,8 +46,8 @@ export function MetricsGrid(props: MetricsGridProps) {
           <div className="grid auto-rows-fr grid-cols-2 divide-x divide-y divide-text-primary/10 border-y border-text-primary/10 lg:grid-cols-4 lg:divide-y-0">
             {productMetrics.map((stat, i) => (
               <FadeIn key={stat.value} delay={i * 0.08} className="h-full">
-                <div className="flex h-full flex-col gap-1 px-5 pt-8 pb-5 md:px-8 md:pt-10 md:pb-6">
-                  <p className="font-sans text-3xl font-bold tracking-tight text-text-primary md:text-4xl">
+                <div className="flex h-full flex-col items-center justify-center gap-1 px-5 py-8 text-center md:px-8 md:py-10">
+                  <p className="font-sans text-2xl font-bold tracking-tight text-text-primary md:text-4xl">
                     {stat.value}
                   </p>
                   <p

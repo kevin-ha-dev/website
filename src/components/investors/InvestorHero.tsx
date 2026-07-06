@@ -42,16 +42,8 @@ export function InvestorHero() {
           <p className="type-body col-span-12 max-w-xs leading-relaxed md:col-span-5 lg:col-span-4">
             {investorHeroCopy.intro}
           </p>
-          <Link
-            href={siteConfig.calendlyUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary col-span-12 mt-1 w-fit md:col-span-5 lg:col-span-4"
-          >
-            {investorDeckCopy.ctaLabel}
-          </Link>
 
-          <div className="relative col-span-12 aspect-video w-full border border-text-primary/12 bg-text-primary/4 md:col-span-6 md:col-start-7 md:row-start-1 md:row-span-4 md:aspect-auto md:min-h-0 lg:col-span-7 lg:col-start-6">
+          <div className="relative col-span-12 aspect-video w-full border border-text-primary/12 bg-text-primary/4 md:col-span-6 md:col-start-7 md:row-start-1 md:row-span-3 md:aspect-auto md:min-h-0 lg:col-span-7 lg:col-start-6">
             <Image
               src={image.src}
               alt={image.alt}
@@ -61,6 +53,15 @@ export function InvestorHero() {
               priority
             />
           </div>
+
+          <Link
+            href={siteConfig.calendlyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary col-span-12 mt-1 w-full justify-center md:col-span-5 md:w-fit md:justify-start lg:col-span-4"
+          >
+            {investorDeckCopy.ctaLabel}
+          </Link>
           </div>
         </div>
       </section>

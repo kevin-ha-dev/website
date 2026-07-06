@@ -17,18 +17,18 @@ export function BookDemoCTA() {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="grid grid-cols-1 gap-3 sm:w-max sm:grid-cols-2">
             <Link
               href={siteConfig.calendlyUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="btn-primary justify-center"
             >
               Book a call →
             </Link>
             <a
               href={`mailto:${siteConfig.salesEmail}`}
-              className="inline-flex items-center border border-white/20 px-5 py-3 text-sm font-semibold text-text-on-dark transition-colors hover:bg-white/5"
+              className="inline-flex items-center justify-center border border-white/20 px-8 py-4 text-sm font-semibold text-text-on-dark transition-colors hover:bg-white/5"
             >
               Email us →
             </a>

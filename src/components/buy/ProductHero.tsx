@@ -7,28 +7,18 @@ export function ProductHero() {
   return (
     <section className="page-x border-b border-text-primary/10 bg-background">
       <div
-        className="mx-auto grid max-w-[1200px] grid-cols-12 gap-x-6 gap-y-10 pb-14 md:gap-x-8 md:pb-20"
+        className="mx-auto grid max-w-[1200px] grid-cols-12 gap-x-6 gap-y-5 pb-14 md:gap-x-8 md:gap-y-10 md:pb-20"
         style={{ paddingTop: NAV_BAR_HEIGHT_PX + 72 }}
       >
-        <div className="col-span-12 flex flex-col gap-5 md:col-span-5 lg:col-span-4">
-          <h1 className="type-display-sm text-text-primary">
-            Put B.O.B. in your kitchen.
-          </h1>
-          <p className="type-body max-w-xs leading-relaxed">
-            Want to learn more? Book a call and we&apos;ll walk you through
-            ownership, setup, and menu training.
-          </p>
-          <Link
-            href={siteConfig.calendlyUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary mt-1 w-fit"
-          >
-            Book a call →
-          </Link>
-        </div>
+        <h1 className="type-display-sm col-span-12 text-text-primary md:col-span-5 lg:col-span-4">
+          Put B.O.B. in your kitchen.
+        </h1>
+        <p className="type-body col-span-12 max-w-xs leading-relaxed md:col-span-5 lg:col-span-4">
+          Want to learn more? Book a call and we&apos;ll walk you through
+          ownership, setup, and menu training.
+        </p>
 
-        <div className="col-span-12 md:col-start-7 md:col-span-6 lg:col-start-6 lg:col-span-7">
+        <div className="col-span-12 md:col-start-7 md:col-span-6 md:row-start-1 md:row-span-3 lg:col-start-6 lg:col-span-7">
           <div className="relative aspect-video w-full border border-text-primary/12 bg-text-primary/4">
             <VideoEmbed
               src={siteConfig.demoVideoUrl}
@@ -37,6 +27,15 @@ export function ProductHero() {
             />
           </div>
         </div>
+
+        <Link
+          href={siteConfig.calendlyUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary col-span-12 mt-1 w-full justify-center md:col-span-5 md:w-fit md:justify-start lg:col-span-4"
+        >
+          Book a call →
+        </Link>
       </div>
     </section>
   );
