@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { siteConfig } from "@/lib/siteConfig";
 
 type FooterProps = {
   variant?: "full" | "minimal";
@@ -58,7 +58,7 @@ function SocialIcons() {
         <path d="m10 15 5-3-5-3z" />
       </svg>
     </a>
-    <a href="#" aria-label="Email">
+    <a href={`mailto:${siteConfig.contactEmail}`} aria-label="Email">
       <svg
         width="22"
         height="22"
@@ -111,12 +111,14 @@ export function Footer({ variant = "full", contentWidth }: FooterProps) {
           <br />
           More time on what matters.
         </h2>
-        <Link
-          href="/contact"
+        <a
+          href={siteConfig.calendlyUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded-button bg-background px-9 py-4 text-base font-semibold text-brand-contrast"
         >
-          Contact us
-        </Link>
+          Book a call
+        </a>
       </div>
 
       <div className="border-t border-dashed border-border-dark" />

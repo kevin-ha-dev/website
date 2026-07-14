@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BookDemoCTA } from "@/components/buy/BookDemoCTA";
 import { BobFactCards } from "@/components/home/BobFactCards";
 import { MenuHighlights } from "@/components/home/MenuHighlights";
 import { PixelMosaicShowcase } from "@/components/home/PixelMosaicShowcase";
@@ -20,6 +21,7 @@ export default function Home() {
       <PixelMosaicShowcase />
       <MenuHighlights />
       <VisitSection />
+      <BookDemoCTA />
       <Footer variant="minimal" />
     </main>
   );

@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "BURGERBOTS",
   description: "Industry robots. Simply deployed. Ready to work.",
   demoVideoUrl: "https://www.youtube.com/embed/qpEV-Glrq_Y?start=4",
-  calendlyUrl: "https://calendly.com",
+  calendlyUrl: "https://calendly.com/realhuman-burgerbots/30min",
   contactEmail: "realhuman@burgerbots.com",
   salesEmail: "realhuman@burgerbots.com",
   investorsEmail: "realhuman@burgerbots.com",

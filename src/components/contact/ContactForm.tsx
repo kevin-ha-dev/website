@@ -11,7 +11,7 @@ export function ContactForm() {
       <h1 className="type-heading-xl text-center text-text-primary mb-4">
         Let&apos;s talk
       </h1>
-      <p className="type-body text-center mb-10">
+      <p className="type-body text-center mb-6">
         Tell us about your operations and we&apos;ll get back to you within an
         hour. Or{" "}
         <a
@@ -24,6 +24,15 @@ export function ContactForm() {
         </a>{" "}
         directly.
       </p>
+
+      <a
+        href={siteConfig.calendlyUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn-primary mb-10 w-full justify-center"
+      >
+        Book a call →
+      </a>
 
       <form className="flex flex-col gap-5">
         <div className="flex flex-col gap-1.5">
