@@ -8,7 +8,7 @@ export function InvestorCTA() {
 
   return (
     <section className="page-x border-t border-text-primary/10 bg-surface-dark py-[var(--spacing-section-sm)]">
-      <div className="mx-auto flex max-w-[1200px] flex-col gap-6">
+      <div className="flex w-full flex-col items-start gap-6">
         <FadeIn>
           <h2 className="type-heading-xl text-text-on-dark">{title}</h2>
           <p className="mt-4 max-w-md leading-relaxed text-text-on-dark-muted">

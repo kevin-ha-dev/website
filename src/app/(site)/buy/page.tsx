@@ -21,7 +21,7 @@ export default function BuyPage() {
       <SpecTable {...buyHardwareSection} layout="split" />
       <FAQSection />
       <BookDemoCTA />
-      <Footer variant="minimal" contentWidth="1200" />
+      <Footer variant="minimal" />
     </main>
   );
 }

@@ -16,7 +16,7 @@ export default function InvestorsPage() {
       <InvestorHero />
       <InvestorDeckPreview />
       <InvestorCTA />
-      <Footer variant="minimal" contentWidth="1200" />
+      <Footer variant="minimal" />
     </main>
   );
 }
