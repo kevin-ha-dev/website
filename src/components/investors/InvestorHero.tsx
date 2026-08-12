@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { FadeIn } from "@/components/shared/FadeIn";
+import { ScrollToHashLink } from "@/components/shared/ScrollToHashLink";
 import {
   InvestorGridRow,
   InvestorSectionGrid,
@@ -20,7 +20,6 @@ import {
 } from "@/lib/investorPartnership";
 import { NAV_BAR_HEIGHT_PX } from "@/lib/navLinks";
 import { investorThesisSections } from "@/lib/proseSections";
-import { siteConfig } from "@/lib/siteConfig";
 
 export function InvestorHero() {
   const { image } = abbPartnershipCopy;
@@ -54,14 +53,12 @@ export function InvestorHero() {
             />
           </div>
 
-          <Link
-            href={siteConfig.calendlyUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <ScrollToHashLink
+            href="#request"
             className="btn-primary col-span-12 mt-1 w-full justify-center md:col-span-5 md:w-fit md:justify-start lg:col-span-4"
           >
             {investorDeckCopy.ctaLabel}
-          </Link>
+          </ScrollToHashLink>
           </div>
         </div>
       </section>

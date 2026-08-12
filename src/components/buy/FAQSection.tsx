@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FadeIn } from "@/components/shared/FadeIn";
+import { ScrollToHashLink } from "@/components/shared/ScrollToHashLink";
 import { siteConfig } from "@/lib/siteConfig";
 
 const faqs = [
@@ -25,21 +26,19 @@ const faqs = [
       "I want in on this bun in a million experience. Can I buy or license my own BurgerBot from you?",
     answer: (
       <>
-        You bet. Get in touch with us at{" "}
+        You bet.{" "}
+        <ScrollToHashLink
+          href="#request"
+          className="font-medium text-text-primary underline underline-offset-2"
+        >
+          Tell us about your kitchen
+        </ScrollToHashLink>{" "}
+        and we&apos;ll follow up, or email{" "}
         <a
           href={`mailto:${siteConfig.contactEmail}`}
           className="font-medium text-text-primary underline underline-offset-2"
         >
           {siteConfig.contactEmail}
-        </a>{" "}
-        so we can talk burgs &apos;n bots, or{" "}
-        <a
-          href={siteConfig.calendlyUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-medium text-text-primary underline underline-offset-2"
-        >
-          book a call
         </a>
         .
       </>

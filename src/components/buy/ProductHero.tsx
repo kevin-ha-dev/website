@@ -1,5 +1,6 @@
-import Link from "next/link";
+import { ScrollToHashLink } from "@/components/shared/ScrollToHashLink";
 import { VideoEmbed } from "@/components/shared/VideoEmbed";
+import { buyRequestSectionCopy } from "@/lib/buyRequest";
 import { NAV_BAR_HEIGHT_PX } from "@/lib/navLinks";
 import { siteConfig } from "@/lib/siteConfig";
 
@@ -14,8 +15,8 @@ export function ProductHero() {
           Put B.O.B. in your kitchen.
         </h1>
         <p className="type-body col-span-12 max-w-xs leading-relaxed md:col-span-5 lg:col-span-4">
-          Want to learn more? Book a call and we&apos;ll walk you through
-          ownership, setup, and menu training.
+          Want to learn more? Tell us about your operation and we&apos;ll walk
+          you through ownership, setup, and menu training.
         </p>
 
         <div className="col-span-12 md:col-start-7 md:col-span-6 md:row-start-1 md:row-span-3 lg:col-start-6 lg:col-span-7">
@@ -28,14 +29,12 @@ export function ProductHero() {
           </div>
         </div>
 
-        <Link
-          href={siteConfig.calendlyUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+        <ScrollToHashLink
+          href="#request"
           className="btn-primary col-span-12 mt-1 w-full justify-center md:col-span-5 md:w-fit md:justify-start lg:col-span-4"
         >
-          Book a call →
-        </Link>
+          {buyRequestSectionCopy.ctaLabel}
+        </ScrollToHashLink>
       </div>
     </section>
   );

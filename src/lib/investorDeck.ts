@@ -27,11 +27,28 @@ export const investorDeckTopics: DeckTopic[] = [
 ];
 
 export const investorDeckCopy = {
-  title: "Full materials available on request.",
+  title: "Let's start a conversation.",
   description:
-    "We share our deck, financial overview, and technical documentation with qualified investors. Reach out and we'll send everything over.",
-  ctaLabel: "Request investor deck →",
-  emailLabel: "Email us →",
+    "We share our deck, financial overview, and technical documentation with qualified investors. Tell us a little about yourself and Liz will follow up personally if it's a fit.",
+  ctaLabel: "Request an intro →",
+};
+
+export const investorStageOptions = [
+  "Pre-seed",
+  "Seed",
+  "Series A",
+  "Series B+",
+  "Angel",
+  "Family office",
+  "Other",
+] as const;
+
+export const investorRequestCopy = {
+  namePlaceholder: "Your name and firm (or 'angel' is fine)",
+  aboutPlaceholder:
+    "What you typically back, and why BurgerBots caught your eye. Liz reads these personally.",
+  submitLabel: "Send request →",
+  fallbackEmail: "realhuman@burgerbots.com",
 };
 
 export const investorHeroCopy = {

@@ -6,7 +6,13 @@ export const navLinks = [
 
 export const lightPages = new Set(["/home", "/buy", "/investors"]);
 
-export const backNavPages = new Set(["/buy", "/investors"]);
+/** Path → back-arrow destination (left side of nav, replaces logo). */
+export const backNavHrefs: Record<string, string> = {
+  "/buy": "/home",
+  "/buy/thank-you": "/buy",
+  "/investors": "/home",
+  "/investors/thank-you": "/investors",
+};
 
 /** 52px logo + py-4 padding + 1px bottom border */
 export const NAV_BAR_HEIGHT_PX = 85;

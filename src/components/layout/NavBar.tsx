@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { lightPages, backNavPages } from "@/lib/navLinks";
+import { lightPages, backNavHrefs } from "@/lib/navLinks";
 import { NavMenu } from "@/components/layout/NavMenu";
 
 export function NavBar() {
@@ -24,7 +24,8 @@ export function NavBar() {
   }, [menuOpen]);
 
   const useDarkNav = lightPages.has(pathname);
-  const showBackNav = backNavPages.has(pathname);
+  const backHref = backNavHrefs[pathname];
+  const showBackNav = Boolean(backHref);
 
   return (
     <>
@@ -37,17 +38,17 @@ export function NavBar() {
       >
         <div
           className={`flex items-center py-4 ${
-            useDarkNav
+            useDarkNav || showBackNav
               ? "px-[var(--spacing-page-x)]"
               : "px-[var(--spacing-page-x)] md:px-6"
           } ${
             showBackNav ? "justify-between" : "relative justify-end md:justify-between"
           }`}
         >
-          {showBackNav ? (
+          {showBackNav && backHref ? (
             <Link
-              href="/home"
-              aria-label="Back to home"
+              href={backHref}
+              aria-label="Go back"
               className={`flex h-11 w-11 items-center justify-center transition-colors ${
                 useDarkNav
                   ? "text-text-primary/80 hover:text-text-primary"
